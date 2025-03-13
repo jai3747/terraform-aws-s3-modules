@@ -271,39 +271,3 @@ tags = {
 
 }
 
-
-
-
-[root@ip-10-24-156-161 DB]# terraform state list
-module.ec2.data.aws_region.current
-module.ec2.data.aws_secretsmanager_secret_version.instance_secrets["MF-AW-PLA-MFET1"]
-
-module.ec2.data.aws_secretsmanager_secret_version.instance_vpc_secrets["MF-AW-PLA-MFET1"]
-
-module.ec2.data.aws_security_group.linux_sg["MF-AW-PLA-MFET1"]
-
-module.ec2.data.aws_security_group.windows_sg["MF-AW-PLA-MFET1"]
-
-module.ec2.aws_ebs_volume.ebs_volumes["MF-AW-PLA-MFET1-/dev/sdb"]
-module.ec2.aws_ebs_volume.ebs_volumes["MF-AW-PLA-MFET1-/dev/sdc"]
-module.ec2.aws_ebs_volume.ebs_volumes["MF-AW-PLA-MFET1-/dev/sdd"]
-
-module.ec2.aws_ec2_tag.linux_sg_tags["MF-AW-PLA-MFET1"]
-
-module.ec2.aws_ec2_tag.windows_sg_tags["MF-AW-PLA-MFET1"]
-
-module.ec2.aws_iam_instance_profile.dynamic_instance_profiles
-module.ec2.aws_iam_role.dynamic_roles
-module.ec2.aws_iam_role_policy_attachment.policy_attachment["ec2_full_access"]
-module.ec2.aws_iam_role_policy_attachment.policy_attachment["s3_full_access"]
-module.ec2.aws_iam_role_policy_attachment.policy_attachment["secrets_manager_full_access"]
-module.ec2.aws_iam_role_policy_attachment.policy_attachment["ssm_access"]
-module.ec2.aws_iam_role_policy_attachment.policy_attachment["system_manager"]
-module.ec2.aws_instance.web_server["MF-AW-PLA-MFET1"]
-
-module.ec2.aws_network_interface.web_server_eni["MF-AW-PLA-MFET1"]
-
-module.ec2.aws_security_group.dynamic_sg["MF-AW-PLA-MFET1"]
-module.ec2.aws_volume_attachment.volume_attachment["MF-AW-PLA-MFET1-/dev/sdb"]
-module.ec2.aws_volume_attachment.volume_attachment["MF-AW-PLA-MFET1-/dev/sdc"]
-module.ec2.aws_volume_attachment.volume_attachment["MF-AW-PLA-MFET1-/dev/sdd"]
